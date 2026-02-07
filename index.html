@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rose Day Surprise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bloom-field" aria-hidden="true">
+      <span class="bloom bloom-one"></span>
+      <span class="bloom bloom-two"></span>
+      <span class="bloom bloom-three"></span>
+      <span class="bloom bloom-four"></span>
+      <span class="bloom bloom-five"></span>
+    </div>
+
+    <main class="page">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="tag">For the most beautiful soul</p>
+          <h1>Rose Day, but make it pure magic ✨</h1>
+          <p>
+            I made a little cinematic moment for you. Let the clips play, then get
+            ready for a surprise filled with lilies, baby’s breath, and dreamy
+            blooms.
+          </p>
+          <button class="reveal-button" type="button">
+            Reveal the surprise
+          </button>
+        </div>
+        <div class="hero-media">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80"
+          >
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"
+          >
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+              type="video/webm"
+            />
+          </video>
+        </div>
+      </header>
+
+      <section id="surprise" class="surprise hidden" aria-live="polite">
+        <div class="surprise-card">
+          <div class="bouquet" role="img" aria-label="A rich bouquet of lilies, baby’s breath, and pastel blooms.">
+            <svg viewBox="0 0 360 420" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="wrap" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#f8dfe7" />
+                  <stop offset="100%" stop-color="#f2b8c6" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M58 352 L172 140 L302 352 Z"
+                fill="url(#wrap)"
+                stroke="#e8a4b1"
+                stroke-width="4"
+              />
+              <path
+                d="M80 340 Q180 310 280 340"
+                fill="none"
+                stroke="#e49aa9"
+                stroke-width="10"
+                stroke-linecap="round"
+              />
+              <g stroke="#4f8a5b" stroke-width="6" stroke-linecap="round">
+                <path d="M170 300 L130 140" />
+                <path d="M185 300 L195 140" />
+                <path d="M200 300 L245 150" />
+                <path d="M150 300 L90 170" />
+              </g>
+              <g>
+                <g transform="translate(80 90)">
+                  <circle cx="30" cy="30" r="30" fill="#ffffff" />
+                  <circle cx="30" cy="30" r="16" fill="#f8e6a0" />
+                  <path
+                    d="M30 6 Q36 20 52 24 Q36 28 30 54 Q24 28 8 24 Q24 20 30 6"
+                    fill="#ffffff"
+                  />
+                </g>
+                <g transform="translate(180 70)">
+                  <circle cx="30" cy="30" r="30" fill="#fef4f4" />
+                  <circle cx="30" cy="30" r="16" fill="#f7d7c0" />
+                  <path
+                    d="M30 6 Q36 20 52 24 Q36 28 30 54 Q24 28 8 24 Q24 20 30 6"
+                    fill="#fdf8f6"
+                  />
+                </g>
+                <g transform="translate(240 120)">
+                  <circle cx="26" cy="26" r="26" fill="#fffdf7" />
+                  <circle cx="26" cy="26" r="12" fill="#f2cfa5" />
+                  <path
+                    d="M26 4 Q30 18 44 20 Q30 22 26 48 Q22 22 8 20 Q22 18 26 4"
+                    fill="#fffdf7"
+                  />
+                </g>
+              </g>
+              <g fill="#ffffff" opacity="0.9">
+                <circle cx="80" cy="150" r="6" />
+                <circle cx="95" cy="130" r="5" />
+                <circle cx="118" cy="170" r="6" />
+                <circle cx="210" cy="150" r="6" />
+                <circle cx="230" cy="130" r="5" />
+                <circle cx="250" cy="170" r="6" />
+                <circle cx="150" cy="120" r="5" />
+                <circle cx="170" cy="110" r="6" />
+              </g>
+              <g fill="#f7c6d0">
+                <circle cx="110" cy="210" r="16" />
+                <circle cx="140" cy="190" r="14" />
+                <circle cx="230" cy="210" r="15" />
+              </g>
+            </svg>
+          </div>
+          <div class="surprise-text">
+            <h2>Happy Rose Day, baby girl 💐</h2>
+            <p>
+              A bouquet overflowing with lilies, baby’s breath, soft blush blooms,
+              and every wish that makes you smile. No red roses—just the pure,
+              elegant colors that remind me of you.
+            </p>
+            <p class="signature">Always yours, always enchanted.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
